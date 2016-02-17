@@ -344,6 +344,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/lib64/libopcamera.so:system/lib64/libopcamera.so \
     $(LOCAL_PATH)/prebuilts/lib64/libopcameralib.so:system/lib64/libopcameralib.so
 
+# Powerhint configuration file
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/powerhint.xml:system/etc/powerhint.xml
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson

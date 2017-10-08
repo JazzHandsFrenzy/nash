@@ -225,3 +225,5 @@ persist.dbg.wfc_avail_ovr=1
 
 # Wi-Fi
 wifi.interface=wlan0
+
+persist.sys.disable_rescue=true

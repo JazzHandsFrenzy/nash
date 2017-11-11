@@ -96,7 +96,7 @@ persist.ts.rtmakeup=false
 # CNE
 persist.cne.feature=1
 
-# Core
+# Core Control
 ro.core_ctl_min_cpu=2
 ro.core_ctl_max_cpu=4
 

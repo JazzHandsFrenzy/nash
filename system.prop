@@ -212,6 +212,9 @@ ro.sys.sdcardfs=true
 # Time Service
 persist.timed.enable=true
 
+# Touch optimizations
+persist.vendor.qti.inputopts.enable=true
+
 # USB
 sys.usb.controller=a800000.dwc3
 sys.usb.rndis.func.name=gsi

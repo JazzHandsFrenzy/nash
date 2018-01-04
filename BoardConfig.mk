@@ -24,9 +24,9 @@
 #
 
 # Inherit from oneplus msm8998-common
--include device/oneplus/msm8998-common/BoardConfigCommon.mk
+-include device/motorola/msm8998-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oneplus/cheeseburger
+DEVICE_PATH := device/motorola/nash
 
 # Assertions
 #TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
@@ -39,4 +39,4 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_FS_CONFIG_GEN += $(DEVICE_PATH)/config.fs
 
 # inherit from the proprietary version
--include vendor/oneplus/cheeseburger/BoardConfigVendor.mk
+-include vendor/motorola/nash/BoardConfigVendor.mk

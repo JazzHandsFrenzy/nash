@@ -23,7 +23,7 @@
 # definition file).
 #
 
-$(call inherit-product, vendor/oneplus/cheeseburger/cheeseburger-vendor.mk)
+$(call inherit-product, vendor/motorola/nash/nash-vendor.mk)
 
 # Overlays
 #DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -68,4 +68,4 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
 # Inherit from oneplus msm8998-common
-$(call inherit-product, device/oneplus/msm8998-common/common.mk)
+$(call inherit-product, device/motorola/msm8998-common/common.mk)

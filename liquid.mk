@@ -20,26 +20,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from cheeseburger device
-$(call inherit-product, device/oneplus/cheeseburger/device.mk)
+$(call inherit-product, device/motorola/nash/device.mk)
 
 # Inherit some common LiquidRemix stuff.
 $(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
-PRODUCT_NAME := liquid_cheeseburger
-PRODUCT_DEVICE := cheeseburger
-PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := ONEPLUS A5000
+PRODUCT_NAME := liquid_nash
+PRODUCT_DEVICE := nash
+PRODUCT_MANUFACTURER := motorola
+PRODUCT_BRAND := motorola
+PRODUCT_MODEL := Moto Z (2)
 
-PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-TARGET_VENDOR_PRODUCT_NAME := OnePlus5
-TARGET_VENDOR_DEVICE_NAME := OnePlus5
-
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus5 PRODUCT_NAME=OnePlus5
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=nash PRODUCT_NAME=nash
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=OnePlus/OnePlus5/OnePlus5:8.0.0/OPR6.170623.013/12140945:user/release-keys \
-    PRIVATE_BUILD_DESC="OnePlus5-user 8.0.0 OPR6.170623.013 57 release-keys"
+BUILD_FINGERPRINT=motorola/nash/nash:7.1.1/NCX26.122-49/51:user/release-keys
 
-TARGET_VENDOR := oneplus
+TARGET_VENDOR := motorola
